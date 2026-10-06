@@ -105,7 +105,7 @@ body{font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;back
 .testbar button{font:inherit;border:0;background:none;color:var(--red);font-weight:700;cursor:pointer}
 .site-footer{border-top:1px solid var(--border);background:#f1f4f2;padding:15px 20px;margin-top:28px}
 .site-footer p{max-width:1040px;margin:0 auto;font-size:14px;color:#6b6a64;text-align:center}
-.site-footer a{color:#6b6a64;text-decoration:underline}
+.site-footer .partners{font-size:16px;color:#4f4e49;margin-bottom:8px;line-height:1.5}.site-footer a{color:#6b6a64;text-decoration:underline}
 @media(max-width:800px){.calendar{grid-template-columns:repeat(3,1fr)}.panel-top{grid-template-columns:220px 1fr}}
 @media(max-width:600px){.step.ill{grid-template-columns:1fr;gap:10px}.fig{max-width:240px}.app{padding-left:15px;padding-right:15px}.header{padding-top:30px}.header h1{font-size:29px}.calendar{grid-template-columns:repeat(2,1fr);gap:12px}.door-info{min-height:92px;padding:11px 12px}.day{font-size:26px}.panel-top{grid-template-columns:1fr}.panel-img{height:200px;min-height:0}.panel-copy{padding:20px}.panel h2{font-size:26px}.selectrow,.cards{grid-template-columns:1fr}.sudoku button{width:48px;height:48px;font-size:24px}.poem{font-size:19px;padding:14px 16px}.testbar{justify-content:flex-start}}
 </style>
@@ -121,7 +121,7 @@ body{font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;back
 <div class="testbar" id="testbar"><strong>Testmodus</strong><span>Dezembertag simulieren:</span><select id="testDay"></select><button id="realDate">Echtes Datum</button></div>
 <main><section class="calendar" id="calendar" aria-label="Adventskalender mit 24 Fenstern"></section><section class="panel" id="panel" aria-live="polite"></section></main>
 </div>
-<footer class="site-footer"><p>&copy; Elisabeth Vanderheiden · <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a> · Fotos: Unsplash · Gedichte und Liedtexte gemeinfrei</p></footer>
+<footer class="site-footer"><p class="partners">In Kooperation mit GrubiNetz – Kompetenznetzwerk Grundbildung und Alphabetisierung Rheinland-Pfalz, Region Eifel/Mosel/Trier, und dem Mehrgenerationenhaus Gerolstein</p><p>&copy; Elisabeth Vanderheiden · <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a> · Fotos: Unsplash · Gedichte und Liedtexte gemeinfrei</p></footer>
 <script>
 const API='https://script.google.com/macros/s/AKfycbzwuxzv52B1KyDZLC-HmVWqhrs_kGjToedaWHvsNzTtaq2zk7179-NkwaSXddJwcQXQXg/exec';
 const IMAGES=['aaron-burden-cGW1w-qLix8-unsplash.jpeg','aaron-burden-ePwEGur8gIw-unsplash.jpeg','alex-shute-PAWdhGWoFxM-unsplash.jpeg','anne-nygard-0uRJY0sStM0-unsplash.jpeg','anne-nygard-RItCl_kH-gY-unsplash.jpeg','artur-stanulevich-6ouEQt-382w-unsplash.jpeg','carmen-keuper-MLH7ox3cNTo-unsplash.jpeg','casey-chae-3DrCZblTGoQ-unsplash.jpeg','erwan-hesry-e9jV1ZyrOmg-unsplash.jpeg','hamideh-jafari-Uob05epD1qg-unsplash.jpeg','jessica-mangano-smNzhFQRktg-unsplash.jpeg','lazarescu-alexandra-WTEaTG0sMtc-unsplash.jpeg','mel-poole-LUPXhXj2ip0-unsplash.jpeg','robert-thiemann-3xDcbPjxc78-unsplash.jpg','varun-gaba-FBY0x2_jalQ-unsplash.jpeg','vidar-nordli-mathisen-gtttf-4dHYQ-unsplash.jpg'];
@@ -135,7 +135,7 @@ const DOOR=[null,
 {neu:'tag16.jpg',i:10,alt:'Warme Wollsocken'},{neu:'tag17.jpg',i:13,alt:'Notenblatt mit Weihnachtsliedern'},{neu:'tag18.jpg',i:3,alt:'Bunte Weihnachtskugeln'},{i:14},{neu:'tag20.jpg',i:8,alt:'Weihnachtskarte und Stift'},{i:13},{neu:'tag22.jpg',i:11,alt:'Rätselheft mit Bleistift'},{neu:'tag23.jpg',i:0,alt:'Verschneite Gasse am Abend'},{neu:'tag24.jpg',i:15,alt:'Geschmückter Weihnachtsbaum'}];
 function imageFor(day){const d=DOOR[day];return d.neu||IMAGES[d.i]}
 function altFor(day){const d=DOOR[day];return d.alt||ALT[d.i]}
-function imgTag(day,cls){const d=DOOR[day];return `<img${cls?' class="'+cls+'"':''} src="${imageFor(day)}" alt="${altFor(day)}"${d.neu?` onerror="this.onerror=null;this.src='${IMAGES[d.i]}';this.alt='${ALT[d.i]}'"`:''}>`}
+function imgTag(day,cls){const d=DOOR[day];return `<img${cls?' class="'+cls+'"':' loading="lazy" decoding="async"'} src="${imageFor(day)}" alt="${altFor(day)}"${d.neu?` onerror="this.onerror=null;this.src='${IMAGES[d.i]}';this.alt='${ALT[d.i]}'"`:''}>`}
 function render(){const max=availableDay(),cal=document.getElementById('calendar');cal.innerHTML='';for(let d=1;d<=24;d++){const locked=d>max,b=document.createElement('button');b.type='button';b.className='door'+(locked?' locked':'');b.innerHTML=`${imgTag(d)}<div class="door-info"><div class="day">${d}</div><div class="door-title">${locked?'Öffnet am '+d+'. Dezember':TITLES[d-1]}</div></div>${locked?'<span class="lock">geschlossen</span>':''}`;if(!locked)b.onclick=()=>openDoor(d);cal.appendChild(b)}document.getElementById('statusText').textContent=max===0?'Das erste Fenster öffnet sich am 1. Dezember.':max>=24?'Alle 24 Fenster sind geöffnet.':`Bis heute sind ${max} Fenster geöffnet.`}
 
 /* ---------- Inhalte ---------- */
