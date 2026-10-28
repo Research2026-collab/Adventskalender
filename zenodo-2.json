@@ -1,0 +1,29 @@
+{
+  "title": "Digitaler Adventskalender. Ein barrierearmer Mitmachkalender aus dem Projekt ToolCheck Inklusion",
+  "version": "1.0.0",
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "cc-by-nc-4.0",
+  "language": "deu",
+  "creators": [
+    {
+      "name": "Vanderheiden, Elisabeth",
+      "affiliation": "Katholische Erwachsenenbildung Rheinland-Pfalz",
+      "orcid": "0000-0002-0781-5435"
+    }
+  ],
+  "description": "<p>Barrierearmer digitaler Adventskalender, entwickelt im Rahmen des Projekts ToolCheck Inklusion der Katholischen Erwachsenenbildung Rheinland-Pfalz in Kooperation mit dem Mehrgenerationenhaus Gerolstein. Er begleitet die Veranstaltung „Digitale Vorlesefunktionen testen“ im Dezember 2026. Vom 1. bis 24. Dezember öffnet sich täglich ein Fenster mit einer niedrigschwelligen Einladung zum Mitmachen, darunter Lachyoga, leichte Bewegungsübungen im Sitzen, eine Bastelanleitung, Sudokus, ein Rätsel, Gedichte, Weihnachtslieder, eine Atemübung und Anregungen für Freundlichkeit im Alltag.</p><p>Der Kalender ist für Nutzer:innen mit geringer digitaler Vorerfahrung gestaltet. Jedes Fenster besitzt eine Vorlesefunktion, Schrift und Schaltflächen sind vergrößert, Übungen und Bastelschritte werden durch Zeichnungen erklärt, und Übungen mit Schiebereglern trainieren die Feinmotorik. Zwei Fenster führen an KI-Anwendungen heran und weisen ausdrücklich darauf hin, dass der Kalender selbst keine KI enthält.</p><p>Die Entwicklung folgt einem partizipativen Ansatz. Die Teilnehmenden erproben den Kalender als Expert:innen in eigener Sache und bewerten ihn in wöchentlichen Treffen. Ihre Rückmeldungen fließen in die Gestaltung ein. Die README beschreibt Inhalte, Bewertungskriterien, Datenschutz und Technik.</p><p>Online erreichbar unter <a href=\"https://research2026-collab.github.io/Adventskalender/\">research2026-collab.github.io/Adventskalender</a>. Die Anwendung besteht aus einer einzigen HTML-Datei und läuft ohne Anmeldung und Installation im Browser.</p><p>In Kooperation mit dem Mehrgenerationenhaus Gerolstein und GrubiNetz, Kompetenznetzwerk Grundbildung und Alphabetisierung Rheinland-Pfalz, Region Eifel/Mosel/Trier.</p><p>Lizenzhinweis: Texte, Gestaltung, Code und Zeichnungen stehen unter CC BY-NC 4.0. Die Fotos stammen von Unsplash und unterliegen der Unsplash-Lizenz. Gedichte und Liedtexte sind gemeinfrei.</p>",
+  "keywords": [
+    "Adventskalender",
+    "digitale Teilhabe",
+    "Barrierearmut",
+    "Vorlesefunktion",
+    "Erwachsenenbildung",
+    "Partizipation",
+    "Expertinnen und Experten in eigener Sache",
+    "Mehrgenerationenhaus",
+    "ToolCheck Inklusion",
+    "Open Educational Resources",
+    "digitale Grundbildung"
+  ]
+}
