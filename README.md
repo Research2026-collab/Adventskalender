@@ -73,7 +73,7 @@ An den Tagen 2, 6, 15 und 24 können Teilnehmende freiwillig einen kurzen Text h
 
 ## Technik
 
-Der Kalender besteht aus einer einzigen Datei `index.html` mit eingebetteten Stilen, Skripten und Zeichnungen sowie den Fotos im selben Ordner. Er wird über GitHub Pages veröffentlicht. Fenster öffnen sich erst am jeweiligen Dezembertag. Für die Erprobung vor dem 1. Dezember steht ein Testmodus zur Verfügung, mit dem sich jeder Tag simulieren lässt. Dieser Testmodus ist vor dem Start im Dezember zu entfernen. Die Fotos für die Tage 4, 16, 17, 18, 20, 22, 23 und 24 tragen die Dateinamen `tag04.jpg` bis `tag24.jpg` und lassen sich durch Hochladen einer gleichnamigen Datei austauschen. Fotos sollten vor dem Hochladen auf etwa 1500 Pixel Kantenlänge verkleinert werden, damit die Seite auch bei langsamer Verbindung zügig lädt.
+Der Kalender besteht aus einer einzigen Datei `index.html` mit eingebetteten Stilen, Skripten und Zeichnungen sowie den Fotos im selben Ordner. Er wird über GitHub Pages veröffentlicht. Jedes Fenster öffnet sich erst an seinem Dezembertag, maßgeblich ist das Datum des jeweiligen Geräts. Bereits geöffnete Fenster bleiben bis zum Ende des Kalenders zugänglich, ab dem 24. Dezember sind alle Fenster offen. Der Testmodus aus der Erprobungsphase wurde am 28. Oktober 2026 entfernt. Die Fotos für die Tage 4, 16, 17, 18, 20, 22, 23 und 24 tragen die Dateinamen `tag04.jpg` bis `tag24.jpg` und lassen sich durch Hochladen einer gleichnamigen Datei austauschen. Fotos sollten vor dem Hochladen auf etwa 1500 Pixel Kantenlänge verkleinert werden, damit die Seite auch bei langsamer Verbindung zügig lädt.
 
 ## Rechte und Nachnutzung
 

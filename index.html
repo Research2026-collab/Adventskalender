@@ -102,14 +102,11 @@ body{font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;back
 .quiz-progress{font-size:16px;color:var(--light)}
 .choice.right{background:#e6f1eb;border-color:var(--green)}
 .choice.false{background:#f6dcdf;border-color:var(--red);color:var(--red)}
-.testbar{margin:0 auto 26px;max-width:680px;background:#fff;border:1px dashed #c9c6bc;border-radius:9px;padding:12px 14px;display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;font-size:15px;color:var(--muted)}
-.testbar select{font:inherit;padding:5px 8px;border:1px solid var(--border);border-radius:6px;background:#fff}
-.testbar button{font:inherit;border:0;background:none;color:var(--red);font-weight:700;cursor:pointer}
 .site-footer{border-top:1px solid var(--border);background:#f1f4f2;padding:15px 20px;margin-top:28px}
 .site-footer p{max-width:1040px;margin:0 auto;font-size:14px;color:#6b6a64;text-align:center}
 .site-footer .partners{font-size:16px;color:#4f4e49;margin-bottom:8px;line-height:1.5}.site-footer a{color:#6b6a64;text-decoration:underline}
 @media(max-width:800px){.calendar{grid-template-columns:repeat(3,1fr)}.panel-top{grid-template-columns:220px 1fr}}
-@media(max-width:600px){.step.ill{grid-template-columns:1fr;gap:10px}.fig{max-width:240px}.app{padding-left:15px;padding-right:15px}.header{padding-top:30px}.header h1{font-size:29px}.calendar{grid-template-columns:repeat(2,1fr);gap:12px}.door-info{min-height:92px;padding:11px 12px}.day{font-size:26px}.panel-top{grid-template-columns:1fr}.panel-img{height:200px;min-height:0}.panel-copy{padding:20px}.panel h2{font-size:26px}.selectrow,.cards{grid-template-columns:1fr}.sudoku button{width:48px;height:48px;font-size:24px}.poem{font-size:19px;padding:14px 16px}.testbar{justify-content:flex-start}}
+@media(max-width:600px){.step.ill{grid-template-columns:1fr;gap:10px}.fig{max-width:240px}.app{padding-left:15px;padding-right:15px}.header{padding-top:30px}.header h1{font-size:29px}.calendar{grid-template-columns:repeat(2,1fr);gap:12px}.door-info{min-height:92px;padding:11px 12px}.day{font-size:26px}.panel-top{grid-template-columns:1fr}.panel-img{height:200px;min-height:0}.panel-copy{padding:20px}.panel h2{font-size:26px}.selectrow,.cards{grid-template-columns:1fr}.sudoku button{width:48px;height:48px;font-size:24px}.poem{font-size:19px;padding:14px 16px}}
 </style>
 </head>
 <body>
@@ -120,7 +117,6 @@ body{font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;back
 <p class="subtitle">Jeden Tag öffnet sich ein neues Fenster. Darin warten Lieder, Gedichte, Rätsel, Bewegung und kleine Ideen für den Alltag. Tippe einfach auf ein Bild.</p>
 <div class="status"><span class="dot"></span><span id="statusText"></span></div>
 <p class="privacy-note">Wenn Du an einigen Tagen etwas aufschreibst, wird es ohne Namen gespeichert. Bei den Dienstagstreffen im Mehrgenerationenhaus ist Raum, darüber zu sprechen.</p></header>
-<div class="testbar" id="testbar"><strong>Testmodus</strong><span>Dezembertag simulieren:</span><select id="testDay"></select><button id="realDate">Echtes Datum</button></div>
 <main><section class="calendar" id="calendar" aria-label="Adventskalender mit 24 Fenstern"></section><section class="panel" id="panel" aria-live="polite"></section></main>
 </div>
 <footer class="site-footer"><p class="partners">In Kooperation mit GrubiNetz – Kompetenznetzwerk Grundbildung und Alphabetisierung Rheinland-Pfalz, Region Eifel/Mosel/Trier, und dem Mehrgenerationenhaus Gerolstein</p><p>&copy; Elisabeth Vanderheiden · <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a> · Fotos: Unsplash · Gedichte und Liedtexte gemeinfrei</p></footer>
@@ -129,8 +125,8 @@ const API='https://script.google.com/macros/s/AKfycbzwuxzv52B1KyDZLC-HmVWqhrs_kG
 const IMAGES=['aaron-burden-cGW1w-qLix8-unsplash.jpeg','aaron-burden-ePwEGur8gIw-unsplash.jpeg','alex-shute-PAWdhGWoFxM-unsplash.jpeg','anne-nygard-0uRJY0sStM0-unsplash.jpeg','anne-nygard-RItCl_kH-gY-unsplash.jpeg','artur-stanulevich-6ouEQt-382w-unsplash.jpeg','carmen-keuper-MLH7ox3cNTo-unsplash.jpeg','casey-chae-3DrCZblTGoQ-unsplash.jpeg','erwan-hesry-e9jV1ZyrOmg-unsplash.jpeg','hamideh-jafari-Uob05epD1qg-unsplash.jpeg','jessica-mangano-smNzhFQRktg-unsplash.jpeg','lazarescu-alexandra-WTEaTG0sMtc-unsplash.jpeg','mel-poole-LUPXhXj2ip0-unsplash.jpeg','robert-thiemann-3xDcbPjxc78-unsplash.jpg','varun-gaba-FBY0x2_jalQ-unsplash.jpeg','vidar-nordli-mathisen-gtttf-4dHYQ-unsplash.jpg'];
 const ALT=['Kerze am beschlagenen Fenster','Advent-Schriftzug aus Holzbuchstaben','Kerzenflamme vor dunklem Hintergrund','Weihnachtsplätzchen auf einem Teller','Adventskranz an einer Tür','Verzierte Weihnachtsplätzchen','Kerze auf einem Holztisch','Getrocknete Orange und Gewürze','Weihnachtsgeschenke auf einem Tisch','Verschneite Tannenzweige mit Zapfen','Verschneiter Baum','Schneeflocke in Nahaufnahme','Schneeflocke auf dunklem Untergrund','Zwei rote Kerzen vor dunklem Hintergrund','Winterliche Gewürze','Leuchtender Stern'];
 const TITLES=['Ein Lachen zum Anfang','Wem tust Du heute etwas Gutes?','Ein Stern aus Papiertüten','Bewegung im Sitzen','Weihnachtsquiz','Nikolaus bei Dir','Kleines Sudoku','Wir singen: O Tannenbaum','Ein guter Gedanke für heute','Vier Kerzen anzünden','Gedicht: Advent','Ein Rezept für Dich allein','Rätsel mit Lösungswort','Ruhig atmen','Damals im Advent','Noch mehr Bewegung im Sitzen','Wir singen: Schnee und Glöckchen','Ziel treffen','Weihnachtsquiz, zweite Runde','Ein Gruß für jemanden','Stille Nacht zum Zuhören','Sudoku für Geübte','Gedicht: Weihnachten','Von uns für Dich'];
-let simulated=null;
-function availableDay(){if(simulated!==null)return simulated;const d=new Date();if(d.getMonth()===11)return Math.min(24,d.getDate());if(d.getFullYear()>2026)return 24;return 0}
+/* Fenster öffnen sich nach dem Datum des Geräts: im Dezember bis zum heutigen Tag, vorher keines, ab Januar 2027 alle. */
+function availableDay(){const d=new Date();if(d.getMonth()===11)return Math.min(24,d.getDate());if(d.getFullYear()>2026)return 24;return 0}
 /* Fotos je Türchen. Index bezieht sich auf IMAGES und ALT. Für Türchen mit "neu" einfach ein Foto mit diesem Dateinamen hochladen, sonst erscheint das Ersatzfoto. */
 const DOOR=[null,
 {i:5},{i:8},{i:15},{neu:'tag04.jpg',i:9,alt:'Gemütlicher Sessel mit Wolldecke'},{i:1},{i:3},{i:11},{i:9},{i:0},{i:4},{i:10},{i:7},{i:12},{i:2},{i:6},
@@ -138,7 +134,7 @@ const DOOR=[null,
 function imageFor(day){const d=DOOR[day];return d.neu||IMAGES[d.i]}
 function altFor(day){const d=DOOR[day];return d.alt||ALT[d.i]}
 function imgTag(day,cls){const d=DOOR[day];return `<img${cls?' class="'+cls+'"':' loading="lazy" decoding="async"'} src="${imageFor(day)}" alt="${altFor(day)}"${d.neu?` onerror="this.onerror=null;this.src='${IMAGES[d.i]}';this.alt='${ALT[d.i]}'"`:''}>`}
-function render(){const max=availableDay(),cal=document.getElementById('calendar');cal.innerHTML='';for(let d=1;d<=24;d++){const locked=d>max,b=document.createElement('button');b.type='button';b.className='door'+(locked?' locked':'');b.innerHTML=`${imgTag(d)}<div class="door-info"><div class="day">${d}</div><div class="door-title">${locked?'Öffnet am '+d+'. Dezember':TITLES[d-1]}</div></div>${locked?'<span class="lock">geschlossen</span>':''}`;if(!locked)b.onclick=()=>openDoor(d);cal.appendChild(b)}document.getElementById('statusText').textContent=max===0?'Das erste Fenster öffnet sich am 1. Dezember.':max>=24?'Alle 24 Fenster sind geöffnet.':`Bis heute sind ${max} Fenster geöffnet.`}
+function render(){const max=availableDay(),cal=document.getElementById('calendar');cal.innerHTML='';for(let d=1;d<=24;d++){const locked=d>max,b=document.createElement('button');b.type='button';b.className='door'+(locked?' locked':'');b.innerHTML=`${imgTag(d)}<div class="door-info"><div class="day">${d}</div><div class="door-title">${locked?'Öffnet am '+d+'. Dezember':TITLES[d-1]}</div></div>${locked?'<span class="lock">geschlossen</span>':''}`;if(!locked)b.onclick=()=>openDoor(d);cal.appendChild(b)}document.getElementById('statusText').textContent=max===0?'Das erste Fenster öffnet sich am 1. Dezember.':max>=24?'Alle 24 Fenster sind geöffnet.':max===1?'Heute öffnet sich das erste Fenster.':`Bis heute sind ${max} Fenster geöffnet.`}
 
 /* ---------- Inhalte ---------- */
 /* ---------- Zeichnungen ---------- */
@@ -314,8 +310,7 @@ const FREQ={C4:261.63,D4:293.66,E4:329.63,F4:349.23,G4:392,A4:440,B4:493.88,C5:5
 function playStilleNacht(){stopMusic();actx=new (window.AudioContext||window.webkitAudioContext)();const e=0.32;let t=actx.currentTime+.1;SN.forEach(([n,d])=>{const o=actx.createOscillator(),g=actx.createGain();o.type='triangle';o.frequency.value=FREQ[n];g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(.25,t+.03);g.gain.exponentialRampToValueAtTime(.01,t+d*e*.95);o.connect(g).connect(actx.destination);o.start(t);o.stop(t+d*e);t+=d*e});musicTimer=setTimeout(stopMusic,(t-actx.currentTime+.5)*1000)}
 function stopMusic(){clearTimeout(musicTimer);if(actx){actx.close();actx=null}}
 
-/* Testmodus */
-const sel=document.getElementById('testDay');for(let i=0;i<=24;i++){const o=document.createElement('option');o.value=i;o.textContent=i===0?'vor dem 1. Dezember':i+'. Dezember';sel.appendChild(o)}sel.value='24';simulated=24;sel.addEventListener('change',e=>{simulated=Number(e.target.value);closeDoor();render()});document.getElementById('realDate').addEventListener('click',()=>{simulated=null;closeDoor();render();sel.value='0'});render();
+render();
 </script>
 </body>
 </html>
