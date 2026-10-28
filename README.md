@@ -1,18 +1,18 @@
 # Digitaler Adventskalender
 
-Ein barrierearmer digitaler Adventskalender für den Senior:innentreff im Mehrgenerationenhaus Gerolstein. Vom 1. bis 24. Dezember 2026 öffnet sich jeden Tag ein Fenster mit einer kleinen Einladung zum Mitmachen. Dazu gehören Lachyoga, leichte Bewegung im Sitzen, Weihnachtslieder, Gedichte, Rätsel, eine Bastelanleitung und Anregungen für eine Freundlichkeit im Alltag. Der Kalender ist öffentlich unter [research2026-collab.github.io/Adventskalender](https://research2026-collab.github.io/Adventskalender/) erreichbar und benötigt weder eine Anmeldung noch eine Installation.
+Ein barrierearmer digitaler Adventskalender, entwickelt in Kooperation mit dem Mehrgenerationenhaus Gerolstein. Vom 1. bis 24. Dezember 2026 öffnet sich jeden Tag ein Fenster mit einer kleinen Einladung zum Mitmachen. Dazu gehören Lachyoga, leichte Bewegung im Sitzen, Weihnachtslieder, Gedichte, Rätsel, eine Bastelanleitung und Anregungen für eine Freundlichkeit im Alltag. Der Kalender ist öffentlich unter [research2026-collab.github.io/Adventskalender](https://research2026-collab.github.io/Adventskalender/) erreichbar und benötigt weder eine Anmeldung noch eine Installation.
 
 ## Ausgangspunkt
 
-Der Kalender entsteht im Umfeld des Projekts *ToolCheck Inklusion* der Katholischen Erwachsenenbildung Rheinland-Pfalz und wird gemeinsam mit dem GrubiNetz, dem Kompetenznetzwerk Grundbildung und Alphabetisierung Rheinland-Pfalz (Region Eifel/Mosel/Trier), sowie dem Mehrgenerationenhaus Gerolstein erprobt. Er begleitet eine Veranstaltung zum Thema Weihnachten und Künstliche Intelligenz im Senior:innentreff.
+Der Kalender entsteht im Rahmen des Projekts *ToolCheck Inklusion* der Katholischen Erwachsenenbildung Rheinland-Pfalz in Kooperation mit dem Mehrgenerationenhaus Gerolstein und dem GrubiNetz, dem Kompetenznetzwerk Grundbildung und Alphabetisierung Rheinland-Pfalz (Region Eifel/Mosel/Trier). Er begleitet die Veranstaltungen „Digitale Vorlesefunktionen testen“ und „Weihnachten mit ChatGPT & Co.“ im Mehrgenerationenhaus Gerolstein im Dezember 2026.
 
 Die erste Fassung setzte stark auf digitale Medienbildung, etwa mit Übungen zu Falschmeldungen, Telefonbetrug oder dem Formulieren von Anfragen an eine KI. Die Rückmeldung aus der Kooperation machte deutlich, dass diese Aufgaben die digitalen Vorerfahrungen vieler Teilnehmender überfordern würden. Der Kalender wurde daraufhin grundlegend umgebaut. Analoge Tätigkeiten mit niedriger Einstiegsschwelle stehen nun im Vordergrund, digitale Elemente wie die Vorlesefunktion, das Rezept mit KI-Unterstützung oder die Schieberegler-Übungen sind behutsam eingebunden. Diese Überarbeitung ist zugleich der erste Durchlauf des Verfahrens, das die gesamte Erprobung trägt.
 
 ## Die Teilnehmenden als Expert:innen in eigener Sache
 
-Der Kalender versteht sich als Erprobungsgegenstand. Die Frauen und Männer des Senior:innentreffs nutzen ihn zu Hause oder gemeinsam vor Ort und bewerten ihn in den wöchentlichen Dienstagstreffen im Mehrgenerationenhaus. Sie prüfen, ob Anleitungen verständlich sind, ob Schrift und Schaltflächen gut zu bedienen sind und welche Inhalte Freude bereiten. Aus ihren Beobachtungen ergeben sich konkrete Änderungen, die in der folgenden Woche sichtbar werden. Die Teilnehmenden erleben dadurch unmittelbar, dass ihr Urteil die Gestaltung bestimmt.
+Der Kalender versteht sich als Erprobungsgegenstand. Die Teilnehmenden im Mehrgenerationenhaus Gerolstein nutzen ihn zu Hause oder gemeinsam vor Ort und bewerten ihn in den wöchentlichen Dienstagstreffen im Mehrgenerationenhaus. Sie prüfen, ob Anleitungen verständlich sind, ob Schrift und Schaltflächen gut zu bedienen sind und welche Inhalte Freude bereiten. Aus ihren Beobachtungen ergeben sich konkrete Änderungen, die in der folgenden Woche sichtbar werden. Die Teilnehmenden erleben dadurch unmittelbar, dass ihr Urteil die Gestaltung bestimmt.
 
-Diese Haltung folgt dem Empowerment-Ansatz, der Menschen als Akteur:innen ihrer eigenen Lebensgestaltung begreift und ihre vorhandenen Stärken zum Ausgangspunkt macht (Herriger, 2020). Sie knüpft an die kritische Erwachsenenbildung an, in der Lernende ihre Erfahrungen in einen gemeinsamen Dialog einbringen und dadurch Handlungsspielräume gewinnen (Freire, 1970/1973). Die Entwicklung des Kalenders folgt dem Prinzip der Ko-Konstruktion. Erwachsenenbildnerin und Teilnehmende erarbeiten Bewertungsmaßstäbe und Lösungen gemeinsam, wobei die Lebenserfahrung der Älteren als eigenständige Expertise gilt (Reich, 2008). Medienkompetenz wird dabei über die reine Bedienung hinaus verstanden. Sie schließt die Fähigkeit ein, Nutzen und Grenzen digitaler Angebote einzuschätzen und dieses Urteil in die Gestaltung einzubringen (Baacke, 1997; Groeben, 2002). Im Sinne des Capability Approach richtet sich der Blick auf die tatsächlichen Verwirklichungschancen der Einzelnen, also darauf, was ein digitales Angebot ihnen im Alltag wirklich ermöglicht (Sen, 1999; Nussbaum, 2000).
+Diese Haltung folgt dem Empowerment-Ansatz, der Menschen als Akteur:innen ihrer eigenen Lebensgestaltung begreift und ihre vorhandenen Stärken zum Ausgangspunkt macht (Herriger, 2020). Sie knüpft an die kritische Erwachsenenbildung an, in der Lernende ihre Erfahrungen in einen gemeinsamen Dialog einbringen und dadurch Handlungsspielräume gewinnen (Freire, 1970/1973). Die Entwicklung des Kalenders folgt dem Prinzip der Ko-Konstruktion. Erwachsenenbildnerin und Teilnehmende erarbeiten Bewertungsmaßstäbe und Lösungen gemeinsam, wobei die Lebenserfahrung der Teilnehmenden als eigenständige Expertise gilt (Reich, 2008). Medienkompetenz wird dabei über die reine Bedienung hinaus verstanden. Sie schließt die Fähigkeit ein, Nutzen und Grenzen digitaler Angebote einzuschätzen und dieses Urteil in die Gestaltung einzubringen (Baacke, 1997; Groeben, 2002). Im Sinne des Capability Approach richtet sich der Blick auf die tatsächlichen Verwirklichungschancen der Einzelnen, also darauf, was ein digitales Angebot ihnen im Alltag wirklich ermöglicht (Sen, 1999; Nussbaum, 2000).
 
 ## Inhalte der 24 Fenster
 
@@ -43,13 +43,13 @@ Diese Haltung folgt dem Empowerment-Ansatz, der Menschen als Akteur:innen ihrer 
 | 23 | Gedicht: Weihnachten | Joseph von Eichendorff |
 | 24 | Von uns für Dich | Gemeinsame Weihnachtskarte aus den geteilten Beiträgen |
 
-## Gestaltung für ältere Nutzer:innen
+## Gestaltung für Nutzer:innen mit wenig digitaler Erfahrung
 
 Die Grundschrift ist mit 19 Pixeln deutlich größer als üblich, Überschriften und Zahlen sind entsprechend größer gesetzt. Alle Schaltflächen sind mindestens 52 Pixel hoch und damit auch mit unsicherer Hand gut zu treffen. Jedes Fenster besitzt eine Schaltfläche, die den Text in deutscher Sprache vorliest. Anleitungen sind in kurze nummerierte Schritte gegliedert, die Bewegungs- und Bastelschritte zeigen zusätzlich eine Zeichnung. Bei den Bewegungsübungen weist ein Hinweis darauf hin, nur schmerzfrei zu üben und bei Unsicherheit ärztlichen Rat einzuholen. Die Seite funktioniert auf dem Smartphone ebenso wie am Computer und ordnet sich auf kleinen Bildschirmen einspaltig an.
 
 ## Bewertungskriterien für die Dienstagstreffen
 
-Die Kriterien greifen die Bewertungsdimensionen der Projektskizze auf und übertragen sie auf die Lebenswelt des Senior:innentreffs. Sie werden mit den Teilnehmenden gemeinsam erprobt und bei Bedarf verändert.
+Die Kriterien greifen die Bewertungsdimensionen der Projektskizze auf und übertragen sie auf die Lebenswelt der Teilnehmenden. Sie werden mit den Teilnehmenden gemeinsam erprobt und bei Bedarf verändert.
 
 | Kriterium | Beobachtungsgegenstand |
 |---|---|
